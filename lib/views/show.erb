@@ -6,9 +6,10 @@
   </head>
   <body>
     <h1>PAGE POTIN</h1>
-    <h2>Voici la page du potin n°<%= params[:id]%> </h2>
+    <h2> Voici la page du potin n°<%= params[:id]%> </h2>
     <p> Son auteur :  <%= gossip_array.author %> <br>
      Le contenu du potin : <%= gossip_array.content %></p>
+    <p><a href="/gossips/<%= params[:id]%>/edit">Éditer</a> le potin</p>
     <p><a href="/">Lien</a> pour revenir à la page des potins</p>
 
   </body>

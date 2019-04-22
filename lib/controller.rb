@@ -21,5 +21,10 @@ class ApplicationController < Sinatra::Base
     erb :show, locals: {gossip_array: Gossip.find(params[:id].to_i)}
   end
 
+  get '/gossips/:id/edit' do
+    ### we create a dynamic variable to easily call from show.erb
+    erb :edit, locals: {gossip_array: Gossip.find(params[:id].to_i)}
+  end
+
 
 end

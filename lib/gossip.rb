@@ -25,4 +25,8 @@ class Gossip
   def self.find(id)
     self.all[id]
   end
+
+  def modify(id)
+    gossip_to_edit = CSV.
+  end
 end
